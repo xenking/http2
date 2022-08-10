@@ -220,7 +220,7 @@ func main() {
 		Name:    "HTTP2 Demo",
 	}
 
-	http2.ConfigureServer(s)
+	http2.ConfigureServer(s, http2.ServerConfig{})
 
 	err := s.ListenAndServeTLS(*listenArg, *certArg, *keyArg)
 	if err != nil {
