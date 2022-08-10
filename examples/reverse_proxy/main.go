@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/dgrr/http2"
 	"github.com/valyala/fasthttp"
+	"github.com/xenking/http2"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	http2.ConfigureServer(s)
+	http2.ConfigureServer(s, http2.ServerConfig{})
 
 	err = s.ListenAndServeTLS(":8443", "", "")
 	if err != nil {

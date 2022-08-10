@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/dgrr/http2"
 	"github.com/valyala/fasthttp"
+	"github.com/xenking/http2"
 )
 
 func main() {

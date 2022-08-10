@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dgrr/http2/http2utils"
+	"github.com/xenking/http2/http2utils"
 )
 
 var hfs = []*HeaderField{

@@ -6,7 +6,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/dgrr/http2/http2utils"
+	"github.com/xenking/http2/http2utils"
 )
 
 const (
